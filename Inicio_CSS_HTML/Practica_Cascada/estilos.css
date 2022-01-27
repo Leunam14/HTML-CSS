@@ -1,0 +1,89 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,body,h1,h2,h3,h4,h5,h6,p,ul,ol,li,code,address{
+	padding: 0;
+	margin: 0;
+	font-size: 100%;
+	font-weight: normal;
+}
+
+ol{
+	margin-left: 1.4em;
+	list-style: decimal;
+}
+
+ul{
+	margin-left: 1.4em;
+	list-style: square;
+}
+
+img{
+	border: 0;
+}
+
+#Principal{
+	float: left; /*Va a establecer el bloque a la izquierda (div) y se pondrá el otro bloque a la derecha*/
+	width: 580px;
+	
+}
+
+#Lateral{
+	margin-left: 600px;
+	padding: 15px;
+	background-color:#e1cdff;
+	color: #FFFFFF;
+}
+
+body{
+	color: #b1967c;
+	font-family: Baskerville, Palatino Linotype, Palatino, Century Schoolbook L, Times New Roman, serif;
+	padding-top: 100px; /*Espacio entre la parte de arriba de la página y el primer parrafo*/
+	background: #e1cdff url(images/fondo_cuerpo.png) repeat-x; /*Se repite solamente en el eje x la imagen*/
+	width: 800px; /*Ancho al body de 800px que haría que se quedara en la izquierda
+					para centrarlo usaremos la opción de abajo de margin: 0 auto*/
+	
+	margin: 0 auto; /*El contenido se centra sea cual sea la resolución del monitor*/
+}
+
+h1{
+	font-size: 3em;
+	font-family: Arial Black," sans-serif";
+	
+}
+
+h2{
+	font-size: 2em;
+	color: #600;
+	margin-bottom: 5px; /*Distancia entre el h2 y el texto de abajo*/
+}
+
+#Principal h2{
+	
+	color: #e8a064;
+	border-bottom: 2px white solid;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	background: url(images/flor.png) no-repeat;
+	padding-left: 50px; /*Distancia del contenido (caja de texto) al contenedor (propio h2)
+						SANGRIA DE TODA LA VIDA*/
+	
+}
+
+#Principal p{
+	
+	color: #616161;
+	margin-left: 100px;
+	font-family: Constantia, Lucida Bright, DejaVu Serif, Georgia, serif;
+	font-size: 1.1em;/*Multiplicador de tamaño, multiplica 1,1*/
+	line-height: 150%; /*Aumenta el espacio que hay entre los párrafos*/
+	margin-bottom: 10px;   /*Distancia desde el borde del contenedor hasta lo que aparezca a continuación*/
+	
+}
+
+#Principal .introduccion {
+	color: #6a9413;
+	font-family: Impact, Haettenschweiler, Franklin Gothic Bold, Arial Black," sans-serif";
+	font-size: 1.2em;
+	margin-left: 0px; /*Para quitar la sangría*/
+}

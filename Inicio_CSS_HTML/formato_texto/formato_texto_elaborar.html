@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Características del texto</title>
+
+<style type="text/css">
+	
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+ padding: 0;
+ margin: 0;
+ font-size: 100%;
+ font-weight: normal;
+}
+	
+table { border-collapse: collapse; border-spacing: 0; }
+td, th, caption { font-weight: normal; text-align: left; }
+img, fieldset { border: 0; }
+ol { padding-left: 1.4em; list-style: decimal; }
+ul { padding-left: 1.4em; list-style:square; }
+q:before, q:after { content:''; }
+
+	body{
+		
+		color: #003;
+		font-family: "Arial Black", sans-serif;
+		font-size: 62%;
+		background: #09F url(imagenes/fondo_div.png) repeat-x;
+		
+		
+	}
+	
+	#Principal{
+		
+		width: 740px;
+		margin: 0 auto;
+		border: 4px solid white;
+		padding: 0 10px; /*Al poner solo dos valores, el 0 hace referencia a los valores de top y bottom,
+						y el 10 hace referencia al left y al right*/
+		background: url(imagenes/fondo.jpg) no-repeat;
+		
+	}
+	
+	#Principal h1 {
+		
+		color: #f30;
+		font-family: "Arial Black", sans-serif;
+		font-size: 3em;
+		
+		
+		
+	}
+	
+	#Principal h1 b{
+		
+		font-size: 150px;
+		color: #FFFFFF;
+		margin-right: -0.75em;
+		line-height: 100%;
+		
+		
+	}
+	
+	#Principal h2{
+		
+		font: bold 3.5em Garamond;
+		border-bottom: 1px black solid;
+		margin-top: 25px;
+	}
+	
+	#Principal h3{
+		color:#F15A00;
+		font-size: 1.9em;
+		font-family: Gotham, Helvetica Neue, Helvetica, Arial," sans-serif";
+		font-weight: bold; /*Para que lo ponga en negrita*/
+		text-transform: uppercase; /*Pone el texto en MAYUSCULAS*/
+		margin-top:	25px;
+		margin-bottom: 10px;
+
+	}
+
+	#Principal p{
+		
+		font-size: 1.5em;
+		line-height: 150%; /*Distancia entre los párrafos*/
+		margin-left: 150px;/*Sangría izquierda*/
+		margin-right: 50px;
+		margin-bottom: 10px;
+	}
+	
+	#Principal p:first-line{ /*Con el first-line se va a modificar la primera línea del párrafo
+								para ponerla en negrita, cambiarle el color, tamaño, etc...*/
+		font-weight: bold; /*Lo pone en negrita*/
+		color: #666666;
+	}
+	
+	#Principal ul{
+		
+		margin: 50px 0 25px 50px; /*altura, derecha, bajo, izquierda*/
+		float: right; /*Hace que todo lo que esté al lado del float lo rodee, como cuando se usa
+						en el Office la opción de poner la imagen ajustada a la página.*/
+		width: 160px; /*Le damos un ancho a la lista de 160px*/
+		
+	}
+	
+	#Principal li{
+		
+		color:#493CEF;
+		font-size: 1.5em;
+		margin-bottom: 7px;
+	}
+	
+	#Principal .Autor{
+		
+		font-size: 1.6em;
+		margin: 5px 0 25px 50px;
+	}
+	
+	#Principal .Autor b{
+		
+		color: #FF0004;
+		margin-left: 10px;
+	}
+	
+	</style>
+
+
+</head>
+
+<body>
+<div id="Principal">
+<h1><b>CSS</b>El curso total</h1>
+<h2>Cambiando el formato al texto</h2>
+<p class="Autor">17/10/2021 <b>Desarrollo Aplicaciones Web</b></p>
+<ul>
+  <li>Lorem Ipsum</li>
+  <li>Reprehenderit qui in ea</li>
+  <li>Lorem Ipsum</li>
+  <li>Reprehenderit qui in ea</li>
+  <li>Lorem Ipsum</li>
+  <li>Reprehenderit qui in ea</li>
+</ul>
+<h3>Esse quam nulla</h3>
+<p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+<h3>Quis autem vel eum</h3>
+<p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+</div>
+</body>
+</html>
