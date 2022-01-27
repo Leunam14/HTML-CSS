@@ -1,0 +1,277 @@
+@charset "utf-8";
+/* CSS Document */
+
+header, nav, aside, section, footer{
+display: block;
+}
+
+body{
+text-align: center;
+	
+}
+
+
+p {
+text-align: justify;
+}
+
+#Principal{
+max-width: 970px; /*He establecido el máximo de ancho en pixeles para el contenedor principal*/
+width: 80%; /*80% de ancho*/
+margin: 15px auto;
+text-align: left;
+border: 1px solid #999999;
+background: #DDDDDD;
+border-radius: 20px;
+box-shadow: 15px 15px 13px #A4A4A4;
+}
+
+#Cabecera{
+background:#4341E9;
+color: beige;
+text-align: center;
+padding: 20px 20px;
+border-radius: 20px 20px 0px 0px;
+}
+
+#Menu{
+background: #333;
+margin-top: -15px;
+padding: 1px 0;
+text-align: left;
+box-sizing: border-box;
+
+}
+
+#Opciones{
+float: left;
+margin: 0px;
+padding: 0px;
+/*width: 220px;*/
+width: 24%;
+background: #CCCC;
+font: bold 12px consola, sans-serif;
+box-sizing: border-box;
+
+}
+
+#Seccion{
+float: right;
+/*width: 723px;*/
+width: 76%;
+background: #6FD581;
+padding: 13px;
+box-sizing: border-box;
+}
+
+#Pie{
+clear: both;
+text-align: center;
+border-top: 2px solid #CCCCCC;
+padding: 5px;
+}
+
+#Articulo{
+background: #FFFBCC;
+}
+
+#Principal #Menu ol li{
+	list-style: none;
+	display: inline; /*Para que se muestren de forma horizontal*/
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#Principal #Menu ol li a:hover {
+	color: #474b4e;
+	background: #FFF;
+}
+
+#Principal #Menu ol li a {
+	text-decoration: none;
+	color: #FFFFFF;
+	padding: 16px 45px 17px 35px;
+	font-size: 16px;
+}
+#Principal #Opciones ol li{
+	list-style: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	
+}
+
+#Principal #Opciones ol li a:hover {
+	color: #474b4e;
+	background: #FFF;
+}
+
+#Principal #Opciones ol li a {
+	text-decoration: none;
+	color: #313030;
+	font-size: 12px;
+	padding: 2px 0;
+	
+}
+
+#Seccion h1 {
+	border: solid;
+	border-color: #555555;
+	box-shadow: 10px 15px 10px black;
+	background: #FFFFFF;
+}
+
+#Seccion h3 {
+	border: solid;
+	border-color: #555555;
+	box-shadow: 10px 15px 10px black;
+	background: #FFFFFF;
+}
+
+#Principal #Seccion .cuadrado{
+	border: solid;
+	border-color:#F45659;
+	background: #585BEB;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	
+}
+
+#Principal #Seccion .cuadrado_software{
+	border: solid;
+	background:#BB75F0;
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
+
+#Principal #Seccion .imagen img {
+	/*padding-left: 250px;
+	margin-top: -10px;*/
+	margin:auto;
+	display:block;
+	
+}
+
+#Principal #Seccion .listas{
+	background: #006F1E;
+	padding: 10px 0;
+}
+
+#Principal #Seccion .icono li{
+	list-style: none;
+	background-image:url(../img/cuadrado.JPG);
+	background-repeat: no-repeat;
+	background-color: #0EF021;
+	margin: 5px 5px 5px 0;
+	padding-left: 13px;
+	
+	
+}
+
+#Principal #Seccion .icono_secundario li{
+	list-style: none;
+	background-image:url(../img/cuadrado.JPG);
+	background-repeat: no-repeat;
+	margin: 5px 5px 5px 0;
+	padding-left: 13px;
+}
+
+#Principal #Seccion .tabla {
+	border-color:#000000;
+	background-color: #FFFFFF;
+	
+}
+
+#Principal #Seccion .tabla .titulo {
+	background-color: #BB75F0;
+}
+
+#Principal #Seccion .tabla td {
+	border: 1px solid black;
+	width: 300px; 
+	height: 20px;
+}
+
+.encabezado_principal{
+background: white;
+padding: 5px;
+box-shadow: 10px 10px;
+border: 12px solid grey;
+	
+}
+
+.encabezado_secundario{
+background: white;
+padding: 5px;
+box-shadow: 10px 10px;
+border: 8px solid grey;
+font-style: italic;
+	
+}
+
+/*@MEDIA RESPONSIVE*/
+
+@media (max-width:981px){
+	#Seccion{
+		width: 100%;
+	}
+	
+	#Opciones{
+		width: 100%;
+		text-align: center;
+	}
+	
+	#Menu{
+		list-style: none;
+		text-align: center;
+		
+	}
+	
+	#Principal #Menu ol li a {
+	text-decoration: none;
+	color: #FFFFFF;
+	padding: 18px; 
+	}
+	
+}
+
+@media (max-width:760px){
+	#Principal #Menu ol li a {
+	padding: 10px;
+		
+	}
+	
+	#Principal #Menu ol li{
+	display: flex;
+	align-items: center;
+  	justify-content: center;
+	}
+	
+	
+}
+/*AJUSTANDO TAMAÑO DE IMAGEN*/
+@media (max-width:1100px){
+	#Principal #Seccion img {
+	width: 500px;
+	height: 150px;
+	margin:auto;
+	display:block;
+	}
+}
+
+@media (max-width:850px){
+	#Principal #Seccion img {
+	width: 400px;
+	height: 150px;
+	margin:auto;
+	display:block;
+	}
+}
+
+@media (max-width:715px){
+	#Principal #Seccion img {
+	width: 300px;
+	height: 150px;
+	margin:auto;
+	display:block;
+	}
+}

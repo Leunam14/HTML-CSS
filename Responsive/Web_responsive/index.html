@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Introducción a la informática</title>
+<meta name="viewport" content="width=device-width, user-scalable=no initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<link href="estilos/estilos.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<!--INICIO ID: PRINCIPAL-->
+<div id="Principal">
+  
+  <!--INICIO ID: HEADER-->
+   <header id="Cabecera">
+    <h1>Introducción a la informática</h1>
+  </header>
+  <!--FIN ID: HEADER-->
+  
+  <!--INICIO ID NAV MENU-->
+  <nav id="Menu">
+    <ol>
+		 <li><a href="index.html">Inicio</a></li>
+		 <li><a href="#">Hardware</a></li>
+		 <li><a href="paginas/software.html">Software</a></li>
+		 <li><a href="#">Sistemas de codificación</a></li>
+    </ol>
+  </nav>
+  <!--FIN ID NAV MENU-->
+  
+  <!--INICIO ID ASIDE OPCIONES-->
+  <aside id="Opciones">
+  	<ol>
+      <li><a href="#Ordenador">¿Qué es el ordenador?</a></li>
+      <li><a href="#Esquema">Esquema funcional de un ordenador</a></li>
+      <li><a href="#">Representación de la información</a></li>
+	</ol>
+  </aside>
+  <!--FIN ID ASIDE OPCIONES-->
+
+  <main>
+  
+  <!--INICIO ID SECTION-->
+  <section id="Seccion">
+  
+  	<article>
+  	<header><h2 class="encabezado_principal"><a name="Ordenador">¿QUÉ ES EL ORDENADOR? ¿QUÉ ES LA INFORMÁTICA</a></h2></header>
+  	<h3 class="encabezado_secundario">EL ORDENADOR</h3>
+  	
+  	<p><b>Concepto:</b> Es una máquina programable que se utiliza para el tratamiento automático de la información</p>
+    <p><b>Máquina:</b> Es un dispositivo o sistema físico formado por un conjunto de componentes, cada uno de los cuales desempeña una función</p>
+  	Tipos de máquinas <br>
+        <p>
+        <ul>
+          <li><b>Mecánica</b> Necesita de un operador externo para su funcionamiento. Por ejemplo una máquina de escribir</li>
+          <li><b>Automática</b> No necesita de tal operador</li>
+          <li><b>No programable</b>Su comportamiento es siempre el mismo</li>
+          <li><b>Programable</b>Su comportamiento varía en función del programa que se esté ejecutando</li>
+        </ul>
+	    </p>
+	<p><b>Información</b>. Es la unión de símbolos utilizados para presentar hechos, ideas, objetos. Por ejemplo libro, 25ºC, un párrafo.</p>
+  	<p><b>Datos</b>.- es información codificada que carece de significado por sí solo, es decir, necesita de un contexto para comprender dicho significado. Esta información codificada se introduce en el ordenador a través de distintos periféricos de entrada.</p>
+	<p><b>Programa</b>.- es un conjunto de instrucciones que ejecutadas secuencialmente y en un orden determinado 
+	realizan una tarea.</p>
+	
+	<p>Ejemplo de programa:</p>
+	
+	<div class="cuadrado">
+		<br>Leer lado
+		<br>Area = lado*lado
+		<br>Mostrar “El área del cuadrado es”, Area
+		<br>Fin
+	</div>
+	<p>Una instrucción en un ordenador es una orden</p>
+	</article>
+	
+	<article>
+	<header><h2 class="encabezado_principal">INFORMÁTICA</h2></header>
+	
+	<p><b>Concepto</b>.- Es la ciencia que estudia el tratamiento automático de la información por medio de ordenadores. Es una palabra de origen francés y proviene de la contracción de los vocablos información y automático.
+	<br><br>
+	<b>Partes de la informática</b>.- Las partes de la informática son hardware y software, cada una de ellas por sí solo no sirve para nada.
+	<br><br>
+	El hardware abarca la parte física del ordenador, es decir sus componentes (el microprocesador, la tarjeta de 
+	sonido, la memoria RAM, la placa base, etc.) y los periféricos conectados a él (el monitor, la impresora, el 
+	escáner, el disco duro, el modem, etc.)
+	<br><br>
+	El software abarca la parte lógica de la información, es decir los programas que se ejecutan en el ordenador. 
+	También podemos incluir los datos sobre los que opera los programas y los diferentes tipos de archivos o 
+	ficheros.</p>
+	</article>
+	
+	<article>
+	<header><h2 class="encabezado_principal"><a name="Esquema">ESQUEMA DE UN ORDENADOR</a></h2></header>
+	
+	<figure>
+		<img src="img/esquema_funcional.jpeg" alt="Esquema funcional de un pc" width="600" height="250">
+		<figcaption>Esquema funcional de un pc</figcaption>
+	</figure>
+  
+  <!--INICIO DIV .LISTAS-->
+  	<div class="listas">
+  	
+  <!--INICIO  .ICONO-->	
+  	<ul class="icono">
+  		<li><b>PERIFÉRICOS DE ENTRADA</b>.- es por donde se introducen datos e instrucciones al ordenador, 
+		no pueden recibir información de éste (los datos fluyen de estos al ordenador) p.e. teclado, ratón, 
+		escáner...</li>
+		<img src="img/perifericos_entrada.JPG" align="right" width="272" height="150" >
+		<li><b>MEMORIA MASIVA</b>.- es donde se almacena de manera permanente la información, p.e. CD-ROM, disquette, disco duro, CD-R, DVD-R, DVD-RW, DVD de doble capa...</li>
+		<li><b>MEMORIA PRINCIPAL</b>.- es donde se almacenan de manera temporal los programas que se están ejecutando en el ordenador y los datos sobre los que operan. Se le conoce con el nombre de memoria RAM (memoria de acceso aleatorio).</li>
+		<li><b>CPU</b>.- es la unidad funcional que ejecuta los programas y controla el ordenador. Procesando para ello instrucciones. Podemos distinguir en ella tres partes:</li>
+
+ 		<ul>
+ 			<li><b>ALU (Aritmetic Logic Unit, Unidad Aritmética Lógica)</b>.- Realiza operaciones aritméticas 
+			(sumas, restas, divisiones, …) y lógicas (comparación de números p.e. 5  2).</li>
+			<li><b>UC (Unidad de Control)</b>.- Lleva a cabo el control de las diferentes partes del ordenador. Genera señales de control con el fin de activar diferentes componentes del ordenador en función de las instrucciones que se estén ejecutando.</li>
+ 		</ul>
+ 		<li><b>PERIFÉRICOS DE SALIDA</b>.- son dispositivos que utiliza el ordenador para mostrar la información (la información va del ordenador al periférico), p.e. el monitor, la impresora, el plotter...</li>
+		<li><b>PERIFÉRICOS DE E/S (ENTRADA/SALIDA)</b>.- Permiten enviar y recibir información entre el ordenador y el mundo exterior. P.e. MODEM, unidades de grabación</li>
+  		</ul> 	
+  		<!--FIN  .ICONO-->	
+  			
+  	</div>
+  	<!--FIN DIV .LISTAS-->
+  	
+  	</article>
+  
+  </section>
+  <!--FIN ID SECTION-->
+  
+  </main>
+ 
+ <!--INICIO  FOOTER #PIE-->	
+  <footer id="Pie">
+  Todos los derechos reservados IES La Puebla &copy; 2021-22
+  </footer>
+ <!--FIN  FOOTER #PIE-->
+  
+</div>
+<!--FIN ID: PRINCIPAL-->
+
+</body>
+</html>
