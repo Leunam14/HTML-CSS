@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra andalusia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poller+One&display=swap" rel="stylesheet">
+    <style type="text/css">
+	
+	
+		* {
+		  box-sizing: border-box;
+		}
+
+		body {
+		  font-family: "Poller One", cursive;
+		  background-color: limegreen;
+		  color: white;
+		}
+
+		#title {
+		  text-align: center;
+		  font-size: 3rem;
+		  margin-top: 300px;
+		  animation-duration: 2s;
+		  animation-name: fadeOut;
+		  animation-timing-function: ease-out;
+		  opacity: 0;
+		}
+
+		#slidingText {
+
+		  margin: 0px auto;
+		  font-size: 3rem;
+		  position: fixed;
+		  top: 100%;
+		  animation-name: slideUp;
+		  animation-timing-function: linear;
+		  animation-duration: 30s;
+		  animation-iteration-count: 1;
+		  transform: perspective(400px) rotateX(20deg);
+		}
+
+		#slidingText p {
+		  text-align: center;
+		}
+		
+
+		@keyframes fadeOut {
+		  0% {
+			opacity: 1;
+		  }
+		  100% {
+			opacity: 0;
+		  }
+		}
+
+		@keyframes slideUp {
+		  50% {
+			opacity: 1;
+		  }
+		  100% {
+			top: -200%;
+			opacity: 0;
+		  }
+		}
+
+	</style>
+</head>
+
+<body>
+   
+    <h1 id="title">Hace mucho mucho tiempo...</h1>
+    <div id="slidingText" align="center">
+       
+        <h1>Se originó ANDALUCÍA</h1>
+        
+        <p>El Día de Andalucía se celebra el 28 de febrero y conmemora el día de la celebración del referéndum sobre la iniciativa del proceso autonómico de Andalucía del año 1980 que dio autonomía plena a la comunidad andaluza.</p>
+        
+        <p>Por esto, y por mucho más, veneramos nuestra tierra y la tostadica de aceite</p>
+      
+
+       <center>
+       		<img src="../imagenes/andalucia.jpg" align="center"/>
+       </center>
+        
+        
+        
+        
+        
+    </div>
+</body>
+
+</html>

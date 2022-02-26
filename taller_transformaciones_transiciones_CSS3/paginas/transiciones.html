@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transiciones</title>
+    <style type="text/css">
+	
+		* {
+		  box-sizing: border-box;
+		}
+
+		h1 {
+		  color: white;
+		  background-color: black;
+		  text-align: center;
+		  transition-duration: 3s;
+		  transition-timing-function: ease-in;
+		  transition-property: color, background-color;
+		}
+
+		h1:hover {
+		  color: green;
+		  background-color: gray;
+		}
+
+		.caja {
+		  background-color: green;
+		  border-radius: 0%;
+		  height: 200px;
+		  margin: 30px auto;
+		  transition: all 2s linear;
+		  width: 200px;
+		}
+
+		.caja:hover {
+		  background-color: blue;
+		  border-radius: 40%;
+		}
+
+	</style>
+</head>
+
+<body>
+    <h1>Actividad sobre transiciones</h1>
+    <div class="caja">
+    </div>
+</body>
+
+</html>
