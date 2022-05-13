@@ -233,6 +233,12 @@ fieldset {
 	color: #FFFFFF;
 }
 
+#seccion_noticia {
+
+	display: none;
+
+}	
+
 
 /* ESTILOS FOOTER - NOTICIA*/
 

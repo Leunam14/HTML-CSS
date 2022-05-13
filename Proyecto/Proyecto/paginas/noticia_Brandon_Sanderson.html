@@ -8,6 +8,8 @@
 		<title>ZONY</title>
 		<link rel="shortcut icon" href="../imagenes/Logo.png">
 		<link href="../estilos/estilos.css" rel="stylesheet" type="text/css">
+		<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
 		
 	</head>
 
@@ -35,10 +37,10 @@
 		<nav id="menu_nav">
 			<ul>
 			  <a href="../index.html">Inicio</a> 
-			  <a href="#">Novedad</a> 
-			  <a href="#">Noticias activas</a> 
-			  <a href="#">Lo mejor de la semana</a>
-			  <a href="paginas/sobre_la_pagina.html">Sobre nosotros</a>
+			  <a href="../paginas/novedad.html">Novedad</a> 
+			  <a href="../paginas/noticias_activas.html">Noticias activas</a> 
+			  <a href="../paginas/mejor_semana.html">Lo mejor de la semana</a>
+			  <a href="../paginas/sobre_la_pagina.html">Sobre nosotros</a>
 			</ul>
   		</nav> <!--#menu-->
   		
@@ -82,8 +84,26 @@
 		</article> <!-- #cuerpo_noticia-->
 		
 		<!-- CUERPO NOTICIA - SECTION-->
-		<section id="seccion_noticia">
+		<button type="submit" id="comentario">Escribir comentario</button>
+
+		<script>
+
+			$(function(){
+	
+				$("#comentario").click(function(){
 			
+					// $("#seccion_noticia").show(800);
+					$("#seccion_noticia").fadeToggle(800);
+	
+				});
+	
+			})
+
+	
+		</script>
+
+		<section id="seccion_noticia">
+
 			<form>
 				<fieldset>
 					<legend>Añadir comentario</legend>
@@ -91,7 +111,9 @@
 						Apellidos <input type="text" name="apellidos" size="15" required>
 						Email: <input type="email" name="correo" multiple size="25" required>
 						<p>Comentario:<br><textarea name="area" cols="55" rows="4" minlength="5" maxlength="500" required>Escribe tu mensaje</textarea></p>
-				</fieldset>
+						<br>
+						<button type="submit" id="enviar">Enviar comentario</button>
+					</fieldset>
 			</form>
 		
 		</section> <!-- #seccion_noticia -->
