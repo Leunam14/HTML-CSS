@@ -585,3 +585,65 @@ figure {
 	
 }
 /*ESTILOS BANDERA - FIN*/
+
+
+/* ESTILOS JQUERY - INICIO*/
+#flip{
+	background-color: #343638;
+	border: 1px solid;
+	border-color: #CCC;
+	border-radius: 4px;
+	text-align: center;
+	padding: 5px;
+  }
+  
+  #panelAux{
+	background-color: #343638;
+	border: 1px solid;
+	border-color: #CCC;
+	border-radius: 4px;
+	text-align: center;
+	display: none;
+	padding: 50px;
+  
+  }
+
+  #flip2{
+	background-color: #343638;
+	border: 1px solid;
+	border-color: #CCC;
+	border-radius: 4px;
+	text-align: center;
+	padding: 5px;
+  }
+  
+  #panelAux2{
+	background-color: #343638;
+	border: 1px solid;
+	border-color: #CCC;
+	border-radius: 4px;
+	text-align: center;
+	display: none;
+	padding: 50px;
+  
+  }
+
+  #flip3{
+	background-color: #343638;
+	border: 1px solid;
+	border-color: #CCC;
+	border-radius: 4px;
+	text-align: center;
+	padding: 5px;
+  }
+  
+  #panelAux3{
+	background-color: #343638;
+	border: 1px solid;
+	border-color: #CCC;
+	border-radius: 4px;
+	text-align: center;
+	display: none;
+	padding: 50px;
+  
+  }

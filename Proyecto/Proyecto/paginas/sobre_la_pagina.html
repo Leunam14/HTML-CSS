@@ -8,6 +8,8 @@
 		<title>ZONY</title>
 		<link rel="shortcut icon" href="../imagenes/Logo.png">
 		<link href="../estilos/estilos.css" rel="stylesheet" type="text/css">
+		<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
 		
 	</head>
 
@@ -58,17 +60,32 @@
 				
 			</figure>
 			
-			<h2>¿Qué somos?</h2>
+			<div id="flip"><h2>¿Qué somos?</h2></div>
+
+			<div id="panelAux">
+				
+				<p>Zony es un blog personal, el cual se va a enfocar en las últimas noticias en lo referente a videojuegos, libros o tecnología. Buscamos dar información lo más contrastada posible, veraz y objetiva.</p>
 			
-			<p>Zony es un blog personal, el cual se va a enfocar en las últimas noticias en lo referente a videojuegos, libros o tecnología. Buscamos dar información lo más contrastada posible, veraz y objetiva.</p>
+			</div>
 			
-			<p>A continuación, mostraré un vídeo enseñando las principales secciones de nuestra web y que se pueden encontrar (o hacer) en cada una de ellas.</p>
+			<div id="flip2"><h2>Funcionamiento de nuestra web</h2></div>
+
+			<div id="panelAux2">
+				
+				<p>A continuación, mostraré un vídeo enseñando las principales secciones de nuestra web y que se pueden encontrar (o hacer) en cada una de ellas.</p>
+
+				<center><iframe width="560" height="315" src="https://www.youtube.com/embed/Fycyl_lHjmw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+			</div>
 			
-			<center><iframe width="560" height="315" src="https://www.youtube.com/embed/Fycyl_lHjmw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+			<div id="flip3"><h2>Funcionamiento de la web con audio</h2></div>
+
+			<div id="panelAux3">
+
+				<p>Audio explicativo con las principales características de nuestra página web.</p>
 			
-			<p>Por último, grabaré un audio explicando las principales características.</p>
-			
-			<center><audio src="../audio/audio.mp3" controls>Ejemplo de audio</audio></center>
+				<center><audio src="../audio/audio.mp3" controls>Ejemplo de audio</audio></center>
+
+			</div>
 			
 			<center><hr></center>
 			
@@ -77,16 +94,60 @@
 		</article> <!-- #cuerpo_noticia-->
 		
 		<!-- CUERPO NOTICIA - SECTION-->
-		<section id="seccion_noticia">
+		<button type="submit" id="comentario">Escribir comentario</button>
+
+		<script>
+
+			$(function(){
+	
+				$("#comentario").click(function(){
 			
+					// $("#seccion_noticia").show(800);
+					$("#seccion_noticia").fadeToggle(800);
+	
+				});
+
+				$("#flip").click(function(){
+                
+					$("#panelAux").slideToggle("slow");
+					$("#panelAux").show();
+				
+				
+				});
+
+				$("#flip2").click(function(){
+                
+				$("#panelAux2").slideToggle("slow");
+				$("#panelAux2").show();
+			
+			
+				});
+
+				$("#flip3").click(function(){
+                
+				$("#panelAux3").slideToggle("slow");
+				$("#panelAux3").show();
+			
+			
+				});
+	
+			})
+
+	
+		</script>
+
+		<section id="seccion_noticia">
+
 			<form>
 				<fieldset>
 					<legend>Añadir comentario</legend>
 						Nombre <input type="text" name="nombre" size="10" required> 
 						Apellidos <input type="text" name="apellidos" size="15" required>
-						Email: <input type="email" name="correo" multiple size="15" required>
+						Email: <input type="email" name="correo" multiple size="25" required>
 						<p>Comentario:<br><textarea name="area" cols="55" rows="4" minlength="5" maxlength="500" required>Escribe tu mensaje</textarea></p>
-				</fieldset>
+						<br>
+						<button type="submit" id="enviar">Enviar comentario</button>
+					</fieldset>
 			</form>
 		
 		</section> <!-- #seccion_noticia -->
