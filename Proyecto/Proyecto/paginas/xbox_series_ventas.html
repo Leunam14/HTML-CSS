@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+
+	<head>
+	
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<title>ZONY</title>
+		<link rel="shortcut icon" href="../imagenes/Logo.png">
+		<link href="../estilos/estilos.css" rel="stylesheet" type="text/css">
+		<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+		
+	</head>
+
+<body>
+
+<div id="principal">
+		<!--CABECERA-->
+		<header id="cabecera_principal">
+			
+			<a href="../index.html"><h1>Blog personal</h1></a>
+			
+			<figure id="imagen_logo"> <!--Logotipo-->
+				<a href="../index.html"><img src="../imagenes/Logo.png" alt="Logotipo de la página web (ZONY)" width="80" height="80"></a>	
+			</figure><!--#imagen_logo-->
+			
+			<!--Formulario para buscar entradas en la web-->
+			<form class="formulario_cabecera">
+				<input type="text" class="personalizacion_text" placeholder="Palabra clave a buscar">
+				<input type="submit" class="personalizacion_submit" value="Buscar">
+			</form> <!--.formulario_cabecera-->
+			
+		</header> <!--#cabecera_principal-->
+		
+		<!--NAV-->
+		<nav id="menu_nav">
+			<ul>
+			  <a href="../index.html">Inicio</a> 
+			  <a href="../paginas/novedad.html">Novedad</a> 
+			  <a href="../paginas/noticias_activas.html">Noticias activas</a> 
+			  <a href="../paginas/mejor_semana.html">Lo mejor de la semana</a>
+			  <a href="../paginas/sobre_la_pagina.html">Sobre nosotros</a>
+			</ul>
+  		</nav> <!--#menu-->
+  		
+  		<main>
+  		
+  		<!--CUERPO PÁGINA - SECTION -->
+		<article id="cuerpo_noticia">
+			
+			<h1>Microsoft lanza Xbox Series S</h1>
+			
+			<h6><span>Publicado por Leunam</span> |
+			<span><time datetime="2021-5-12 11:30">Diciembre 5, 2021 a las 21:30</time></span></h6>
+			
+			<figure>
+	
+				<center><img src="../imagenes/xbox_series_s.png" alt="Consola siguiente generación de Microsoft" width="800" height="450"></center>
+				
+			</figure>
+			
+			<h3>Xbox Series S: Consola next-gen al mejor precio</h3>
+			
+			<p>Xbox Series S será la gama de entrada de Microsoft para la nueva generación de consolas. Esta consola contará con un hardware inferior al de su hermana mayor, pero también será más barata que ella, ofreciendo la posibilidad de disfrutar de novedades de última generación, como el Ray Tracing o los tiempos de carga reducidos, a un precio inferior que en Xbox Series X.</p>
+
+			<p>Además, Xbox Series S cuenta con otra importante diferencia respecto a Xbox Series X, y es que será una consola completamente digital. De esta forma, Microsoft sigue el camino iniciado con Xbox One S – All Digital Edition, ofreciendo una consola pensada para disfrutar al máximo de los servicios de la propia compañía y del creciente mercado digital de videojuegos.</p>
+
+		
+			
+			<center><hr></center>
+			
+			<h3>Comentarios</h3>
+			
+		</article> <!-- #cuerpo_noticia-->
+		
+		<!-- CUERPO NOTICIA - SECTION-->
+		
+		<button type="submit" id="comentario">Escribir comentario</button>
+
+		<script>
+
+			$(function(){
+	
+				$("#comentario").click(function(){
+			
+					// $("#seccion_noticia").show(800);
+					$("#seccion_noticia").fadeToggle(800);
+	
+				});
+	
+			})
+
+	
+		</script>
+
+		<section id="seccion_noticia">
+
+			<form>
+				<fieldset>
+					<legend>Añadir comentario</legend>
+						Nombre <input type="text" name="nombre" size="10" required> 
+						Apellidos <input type="text" name="apellidos" size="15" required>
+						Email: <input type="email" name="correo" multiple size="25" required>
+						<p>Comentario:<br><textarea name="area" cols="55" rows="4" minlength="5" maxlength="500" required>Escribe tu mensaje</textarea></p>
+						<br>
+						<button type="submit" id="enviar">Enviar comentario</button>
+					</fieldset>
+			</form>
+		
+		</section> <!-- #seccion_noticia -->
+
+		</main>					
+		
+		<!-- FOOTER -->
+		<footer id="pie_pagina_noticia">
+			
+			<div class="contacto"> <!-- .contacto -->
+			Contacta con nosotros
+			<p>
+			<a href="#">Twitter <img src="../imagenes/twitter.png" alt="Contacta con nosotros en la red social de Twitter" width="20" height="20"></a>
+			<br>
+			<a href="#">Facebook <img src="../imagenes/facebook.png" alt="Contacta con nosotros en la red social de Facebook" width="20" height="20"></a>
+			<br>
+			<a href="#">Instagram <img src="../imagenes/instagram.png" alt="Contacta con nosotros en la red social de Instagram" width="20" height="20"></a>
+			</p>
+			Todos los derechos reservados ZONY &copy; 2021-22
+		</div>	<!-- #pie_pagina -->
+		
+		</footer>
+	
+	</div> <!-- #principal -->
+	
+</body>
+</html>

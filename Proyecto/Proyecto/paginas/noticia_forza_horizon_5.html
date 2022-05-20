@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+
+	<head>
+	
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<title>ZONY</title>
+		<link rel="shortcut icon" href="../imagenes/Logo.png">
+		<link href="../estilos/estilos.css" rel="stylesheet" type="text/css">
+		<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+		
+	</head>
+
+<body>
+
+<div id="principal">
+		<!--CABECERA-->
+		<header id="cabecera_principal">
+			
+			<a href="../index.html"><h1>Blog personal</h1></a>
+			
+			<figure id="imagen_logo"> <!--Logotipo-->
+				<a href="../index.html"><img src="../imagenes/Logo.png" alt="Logotipo de la página web (ZONY)" width="80" height="80"></a>	
+			</figure><!--#imagen_logo-->
+			
+			<!--Formulario para buscar entradas en la web-->
+			<form class="formulario_cabecera">
+				<input type="text" class="personalizacion_text" placeholder="Palabra clave a buscar">
+				<input type="submit" class="personalizacion_submit" value="Buscar">
+			</form> <!--.formulario_cabecera-->
+			
+		</header> <!--#cabecera_principal-->
+		
+		<!--NAV-->
+		<nav id="menu_nav">
+			<ul>
+			  <a href="../index.html">Inicio</a> 
+			  <a href="../paginas/novedad.html">Novedad</a> 
+			  <a href="../paginas/noticias_activas.html">Noticias activas</a> 
+			  <a href="../paginas/mejor_semana.html">Lo mejor de la semana</a>
+			  <a href="../paginas/sobre_la_pagina.html">Sobre nosotros</a>
+			</ul>
+  		</nav> <!--#menu-->
+  		
+  		<main>
+  		
+  		<!--CUERPO PÁGINA - SECTION -->
+		<article id="cuerpo_noticia">
+			
+			<h1>Forza Horizon 5</h1>
+			
+			<h6><span>Publicado por Leunam</span> |
+			<span><time datetime="2021-5-12 11:30">Diciembre 5, 2021 a las 21:30</time></span></h6>
+			
+			<figure>
+	
+				<center><img src="../imagenes/forza_horizon_5.jpg" alt="Carátula juego forza horizon 5" width="800" height="450"></center>
+				
+			</figure>
+			
+			<h3>Mejor lanzamiento de Microsoft este año. Forza Horizon 5 en el podio</h3>
+			
+			<p>Forza Horizon 5 es un videojuego de carreras multijugador en línea desarrollado por Playground Games y publicado por Xbox Game Studios. Es el quinto título de Forza Horizon y la duodécima entrega principal de la serie Forza. El juego está ambientado en una representación ficticia de México.</p>
+
+			<p>Desde el 9 de noviembre de 2021, el videojuego ya está disponible en Xbox Game Pass.</p>
+
+            <p>Fue coronado al juego más esperado en los E3 2021 Awards, y contará con un extenso mundo abierto por explorar, desde híbridos ecosistemas que van desde playas, ciénagas, cañones, costas tropicales, todos con ambientación en México.</p>
+
+            <p>Forza Horizon 5 se ambienta en 11 ecosistemas distintos recreados desde México, que van desde campos hasta volcanes nevados, inclusive la gran ciudad de Guanajuato. Según detalla Microsoft y Don Arceta, director de arte del juego, cada ecosistema cambiará según la estación en donde se viva. Si se habla de primavera, se ambientará en época de lluvia en las selvas, así también como en el verano, la costa tendrá intensas tormentas. Aunque aún no se detallan si las fotos son reales o no.</p>
+
+            <p>Mostramos el trailer del próximo juego de Microsoft.</p>
+
+			<center><iframe width="500" height="315" src="https://www.youtube.com/embed/FYH9n37B7Yw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+
+		
+			
+			<center><hr></center>
+			
+			<h3>Comentarios</h3>
+			
+		</article> <!-- #cuerpo_noticia-->
+		
+		<!-- CUERPO NOTICIA - SECTION-->
+		
+		<button type="submit" id="comentario">Escribir comentario</button>
+
+		<script>
+
+			$(function(){
+	
+				$("#comentario").click(function(){
+			
+					// $("#seccion_noticia").show(800);
+					$("#seccion_noticia").fadeToggle(800);
+	
+				});
+	
+			})
+
+	
+		</script>
+
+		<section id="seccion_noticia">
+
+			<form>
+				<fieldset>
+					<legend>Añadir comentario</legend>
+						Nombre <input type="text" name="nombre" size="10" required> 
+						Apellidos <input type="text" name="apellidos" size="15" required>
+						Email: <input type="email" name="correo" multiple size="25" required>
+						<p>Comentario:<br><textarea name="area" cols="55" rows="4" minlength="5" maxlength="500" required>Escribe tu mensaje</textarea></p>
+						<br>
+						<button type="submit" id="enviar">Enviar comentario</button>
+					</fieldset>
+			</form>
+		
+		</section> <!-- #seccion_noticia -->
+
+		</main>					
+		
+		<!-- FOOTER -->
+		<footer id="pie_pagina_noticia">
+			
+			<div class="contacto"> <!-- .contacto -->
+			Contacta con nosotros
+			<p>
+			<a href="#">Twitter <img src="../imagenes/twitter.png" alt="Contacta con nosotros en la red social de Twitter" width="20" height="20"></a>
+			<br>
+			<a href="#">Facebook <img src="../imagenes/facebook.png" alt="Contacta con nosotros en la red social de Facebook" width="20" height="20"></a>
+			<br>
+			<a href="#">Instagram <img src="../imagenes/instagram.png" alt="Contacta con nosotros en la red social de Instagram" width="20" height="20"></a>
+			</p>
+			Todos los derechos reservados ZONY &copy; 2021-22
+		</div>	<!-- #pie_pagina -->
+		
+		</footer>
+	
+	</div> <!-- #principal -->
+	
+</body>
+</html>
