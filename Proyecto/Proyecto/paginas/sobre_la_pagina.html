@@ -100,6 +100,9 @@
 				<center><audio src="../audio/audio.mp3" controls>Ejemplo de audio</audio></center>
 
 			</div>
+			<br>
+
+			<center><button type="button" id="cerrar_paneles"><h4>Cerrar paneles abiertos</h4></button></center>
 			
 			<center><hr></center>
 			
@@ -145,6 +148,14 @@
 			
 				});
 	
+				$("#cerrar_paneles").click(function(){
+                
+				$("#panelAux").hide("slow");
+				$("#panelAux2").hide("slow");
+				$("#panelAux3").hide("slow");
+			
+			
+			});
 			})
 
 	

@@ -588,16 +588,18 @@ figure {
 
 
 /* ESTILOS JQUERY - INICIO*/
-#flip{
+#flip, #flip2, #flip3{
 	background-color: #343638;
 	border: 1px solid;
 	border-color: #CCC;
 	border-radius: 4px;
 	text-align: center;
 	padding: 5px;
+	cursor: pointer;
+
   }
   
-  #panelAux{
+#panelAux, #panelAux2, #panelAux3{
 	background-color: #343638;
 	border: 1px solid;
 	border-color: #CCC;
@@ -608,42 +610,13 @@ figure {
   
   }
 
-  #flip2{
+  #cerrar_paneles {
 	background-color: #343638;
+	color: #adbac2;
 	border: 1px solid;
 	border-color: #CCC;
 	border-radius: 4px;
-	text-align: center;
-	padding: 5px;
-  }
-  
-  #panelAux2{
-	background-color: #343638;
-	border: 1px solid;
-	border-color: #CCC;
-	border-radius: 4px;
-	text-align: center;
-	display: none;
-	padding: 50px;
-  
-  }
+	width: 130px;
+	cursor: pointer;
 
-  #flip3{
-	background-color: #343638;
-	border: 1px solid;
-	border-color: #CCC;
-	border-radius: 4px;
-	text-align: center;
-	padding: 5px;
-  }
-  
-  #panelAux3{
-	background-color: #343638;
-	border: 1px solid;
-	border-color: #CCC;
-	border-radius: 4px;
-	text-align: center;
-	display: none;
-	padding: 50px;
-  
   }
