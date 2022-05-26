@@ -103,12 +103,6 @@ fieldset {
 	background: #FFF;
 }
 
-#principal #menu_nav ul a {
-	text-decoration: none;
-	color: #9BAEBC;
-	padding: 16px 55px 17px 55px;
-	font-size: 16px;
-}
 
 /*ESTILOS NAV - FIN*/
 
@@ -342,6 +336,18 @@ figure {
 
 /*@MEDIA RESTO PÁGINA - INICIO*/
 
+@media (max-width: 1576px) {
+
+	#principal #menu_nav ul a {
+		text-decoration: none;
+		color: #9BAEBC;
+		padding: 16px 55px 17px 55px;
+		/* padding: 20px;
+		margin-left: -40px; */
+		font-size: 16px;
+	}
+}
+
 @media (max-width: 1176px) {
 	
 	#principal #menu_nav ul a{
@@ -350,6 +356,19 @@ figure {
 		align-items: center;
   		justify-content: center;
 		
+	}
+
+	#principal #menu_nav ul a {
+		text-decoration: none;
+		color: #9BAEBC;
+		padding: 20px;
+		margin-left: -40px;
+		font-size: 16px;
+	}
+
+	#principal #menu_nav ul a:hover {
+		/* width: 800px; */
+		width: 100%;	
 	}
 	
 } 
@@ -397,6 +416,11 @@ figure {
 	#principal #aside {
 		width: 70%;
 	}
+
+	#principal #menu_nav ul a:hover {
+
+		width: 100%;	
+	}
         
 }
 @media (max-width: 833px) {
@@ -412,6 +436,7 @@ figure {
 		
 	}
 	
+
 } 
 		
 @media (max-width: 620px) { 
@@ -430,6 +455,11 @@ figure {
 		height: 300px;
 		align-content: center;
 	}
+
+	#principal #menu_nav ul a:hover {
+
+		width: 100%;	
+	}
 }
         
       
@@ -447,6 +477,10 @@ figure {
 			
 	}
 		
+	#principal #menu_nav ul a:hover {
+
+		width: 100%;	
+	}
        
 }
 
@@ -463,6 +497,8 @@ figure {
 		width: 350px;				
 		align-content: center;			
 	}      
+
+	
 }
 
 
