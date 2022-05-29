@@ -336,7 +336,7 @@ figure {
 
 /*@MEDIA RESTO PÁGINA - INICIO*/
 
-@media (max-width: 1576px) {
+@media (max-width: 1700px) {
 
 	#principal #menu_nav ul a {
 		text-decoration: none;
